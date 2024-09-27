@@ -4,10 +4,10 @@
         <attribute name="name" value="T02"/>
         <attribute name="authors" value="HP"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-09-27 11:31:22 AM"/>
-        <attribute name="created" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6MzA6NDUgQU07MjQxNA=="/>
-        <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6MzA6NDggQU07MTtIUDtMQVBUT1AtVjE4NTFUNTY7MjAyNC0wOS0yNzsxMDozODoyNiBBTTtUMDIuZnByZzs1NzIy"/>
-        <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6MzE6MjIgQU07MTsyNTE4"/>
+        <attribute name="saved" value="2024-09-27 11:42:26 AM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6NDA6MzUgQU07MjQxNA=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6NDE6MTEgQU07MTtIUDtMQVBUT1AtVjE4NTFUNTY7MjAyNC0wOS0wNjsxMTozMjo0NSBBTTtUMDIuZnByZzs1NzA3"/>
+        <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6NDI6MjYgQU07MTsyNTI0"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -23,6 +23,7 @@
             <declare name="stok" type="Integer" array="False" size=""/>
             <declare name="rating" type="Real" array="False" size=""/>
             <declare name="kategori" type="String" array="False" size=""/>
+            <assign variable="kategori" expression="&quot; &quot;"/>
             <input variable="isbn"/>
             <input variable="judul"/>
             <input variable="penulis"/>
