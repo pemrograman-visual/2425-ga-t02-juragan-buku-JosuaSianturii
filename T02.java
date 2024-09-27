@@ -30,26 +30,22 @@ public class T02 {
         margin = input.nextDouble();
         stok = input.nextInt();
         rating = input.nextDouble();
-        if (rating <= 5 && rating >= 0) {
-            if (rating >= 4.7) {
-                kategori = "best pick";
+        if (rating >= 4.7) {
+            kategori = "best pick";
+        } else {
+            if (rating >= 4.5) {
+                kategori = "must read";
             } else {
-                if (rating >= 4.5) {
-                    kategori = "must read";
+                if (rating >= 4.0) {
+                    kategori = "reccomended";
                 } else {
-                    if (rating >= 4.0) {
-                        kategori = "reccomended";
+                    if (rating >= 3.0) {
+                        kategori = "averege";
                     } else {
-                        if (rating >= 3.0) {
-                            kategori = "averege";
-                        } else {
-                            kategori = "low";
-                        }
+                        kategori = "low";
                     }
                 }
             }
-        } else {
-            kategori = "tak terdefenisi";
         }
         System.out.println(isbn + "|" + judul + "|" + penulis + "|" + tahun + "|" + penerbit + "|" + formatbuku + "|" + harga + "|" + margin + "|" + stok + "|" + rating + "|" + kategori);
     }
