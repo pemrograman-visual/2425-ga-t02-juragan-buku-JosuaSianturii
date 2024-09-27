@@ -30,14 +30,14 @@ public class T02 {
         margin = Double.parseDouble(input.nextLine());
         stok = Integer.parseInt(input.nextLine());
         rating = Double.parseDouble(input.nextLine());
-        if (rating >= 4.7 && rating < 5) {
+        if (rating >= 4.7) {
             kategori = "Best Pick";
         } else {
             if (rating >= 4.5 && rating < 4.7) {
                 kategori = "Must Read";
             } else {
                 if (rating >= 4.0 && rating < 4.5) {
-                    kategori = "Reccomended";
+                    kategori = "Recommended";
                 } else {
                     if (rating >= 3.0 && rating < 4.0) {
                         kategori = "Averege";
