@@ -40,7 +40,7 @@ public class T02 {
                     kategori = "Recommended";
                 } else {
                     if (rating >= 3.0 && rating < 4.0) {
-                        kategori = "Averege";
+                        kategori = "Average";
                     } else {
                         kategori = "Low";
                     }
