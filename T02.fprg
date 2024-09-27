@@ -4,10 +4,10 @@
         <attribute name="name" value="T02"/>
         <attribute name="authors" value="HP"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-09-27 11:42:26 AM"/>
+        <attribute name="saved" value="2024-09-27 11:49:38 AM"/>
         <attribute name="created" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6NDA6MzUgQU07MjQxNA=="/>
         <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6NDE6MTEgQU07MTtIUDtMQVBUT1AtVjE4NTFUNTY7MjAyNC0wOS0wNjsxMTozMjo0NSBBTTtUMDIuZnByZzs1NzA3"/>
-        <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6NDI6MjYgQU07MTsyNTI0"/>
+        <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6NDk6MzggQU07MjsyNTM1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -34,22 +34,22 @@
             <input variable="margin"/>
             <input variable="stok"/>
             <input variable="rating"/>
-            <if expression="rating&gt;=4.7">
+            <if expression="rating&gt;=4.7&amp;&amp;rating&lt;5">
                 <then>
                     <assign variable="kategori" expression="&quot;best pick&quot;"/>
                 </then>
                 <else>
-                    <if expression="rating&gt;=4.5">
+                    <if expression="rating&gt;=4.5&amp;&amp;rating&lt;4.7">
                         <then>
                             <assign variable="kategori" expression="&quot;must read&quot;"/>
                         </then>
                         <else>
-                            <if expression="rating&gt;=4.0">
+                            <if expression="rating&gt;=4.0&amp;&amp;rating&lt;4.5">
                                 <then>
                                     <assign variable="kategori" expression="&quot;reccomended&quot;"/>
                                 </then>
                                 <else>
-                                    <if expression="rating&gt;=3.0">
+                                    <if expression="rating&gt;=3.0&amp;&amp;rating&lt;4.0">
                                         <then>
                                             <assign variable="kategori" expression="&quot;averege&quot;"/>
                                         </then>
@@ -63,7 +63,7 @@
                     </if>
                 </else>
             </if>
-            <output expression="isbn&amp;&quot;|&quot;&amp;judul&amp;&quot;|&quot;&amp;penulis&amp;&quot;|&quot;&amp;tahun&amp;&quot;|&quot;&amp;penerbit&amp;&quot;|&quot;&amp;formatbuku&amp;&quot;|&quot;&amp;harga&amp;&quot;|&quot;&amp;margin&amp;&quot;|&quot;&amp;stok&amp;&quot;|&quot;&amp;rating&amp;&quot;|&quot;&amp;kategori" newline="True"/>
+            <output expression="isbn&amp;&quot;|&quot;&amp;judul&amp;&quot;|&quot;&amp;penulis&amp;&quot;|&quot;&amp;tahun&amp;&quot;|&quot;&amp;penerbit&amp;&quot;|&quot;&amp;formatbuku&amp;&quot;|&quot;&amp;harga&amp;&quot;|&quot;&amp;margin&amp;&quot;|&quot;&amp;stok&amp;&quot;|&quot;&amp;tofixed(rating,1)&amp;&quot;|&quot;&amp;kategori" newline="True"/>
         </body>
     </function>
 </flowgorithm>
