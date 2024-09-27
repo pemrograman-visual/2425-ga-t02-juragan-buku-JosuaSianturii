@@ -4,10 +4,10 @@
         <attribute name="name" value="T02"/>
         <attribute name="authors" value="HP"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-09-27 10:43:06 AM"/>
+        <attribute name="saved" value="2024-09-27 11:17:36 AM"/>
         <attribute name="created" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTA6Mzg6MjYgQU07MjQyMA=="/>
         <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTA6Mzk6MDIgQU07MTtIUDtMQVBUT1AtVjE4NTFUNTY7MjAyNC0wOS0wNjsxMTozMjo0NSBBTTtUMDIuZnByZzs1NzEz"/>
-        <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTA6NDM6MDYgQU07MjsyNTIz"/>
+        <attribute name="edited" value="SFA7TEFQVE9QLVYxODUxVDU2OzIwMjQtMDktMjc7MTE6MTc6MzYgQU07MzsyNTI5"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -33,7 +33,7 @@
             <input variable="margin"/>
             <input variable="stok"/>
             <input variable="rating"/>
-            <if expression="rating&lt;=5">
+            <if expression="rating&lt;=5&amp;&amp;rating&gt;=0">
                 <then>
                     <if expression="rating&gt;=4.7">
                         <then>
