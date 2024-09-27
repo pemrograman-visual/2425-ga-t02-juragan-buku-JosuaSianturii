@@ -20,7 +20,6 @@ public class T02 {
         double rating;
         String kategori;
 
-        kategori = " ";
         isbn = input.nextLine();
         judul = input.nextLine();
         penulis = input.nextLine();
@@ -32,18 +31,18 @@ public class T02 {
         stok = Integer.parseInt(input.nextLine());
         rating = Double.parseDouble(input.nextLine());
         if (rating >= 4.7 && rating < 5) {
-            kategori = "best pick";
+            kategori = "Best Pick";
         } else {
             if (rating >= 4.5 && rating < 4.7) {
-                kategori = "must read";
+                kategori = "Must Read";
             } else {
                 if (rating >= 4.0 && rating < 4.5) {
-                    kategori = "reccomended";
+                    kategori = "Reccomended";
                 } else {
                     if (rating >= 3.0 && rating < 4.0) {
-                        kategori = "averege";
+                        kategori = "Averege";
                     } else {
-                        kategori = "low";
+                        kategori = "Low";
                     }
                 }
             }
