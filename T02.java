@@ -1,7 +1,7 @@
 // 12S24058-Airene Situmorang
 // 12S24035-Josua Sianturi
 
-import java.util.*;
+iimport java.util.*;
 import java.lang.Math;
 
 public class T02 {
